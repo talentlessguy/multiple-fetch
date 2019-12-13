@@ -1,0 +1,21 @@
+{
+  "name": "multiple-fetch",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "keywords": [],
+  "author": "v1rtl",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/jest": "^24.0.23",
+    "bili": "^4.8.1",
+    "isomorphic-unfetch": "^3.0.0",
+    "jest": "^24.9.0",
+    "rollup-plugin-typescript2": "^0.25.3",
+    "ts-jest": "^24.2.0",
+    "typescript": "^3.7.3"
+  }
+}
