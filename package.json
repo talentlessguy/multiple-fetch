@@ -12,9 +12,18 @@
     "test": "jest",
     "build": "yarn bili src/index.ts --format cjs --format esm"
   },
-  "keywords": [],
+  "keywords": [
+    "fetch",
+    "multi-fetch",
+    "data",
+    "universal",
+    "fetch-data"
+  ],
   "author": "v1rtl",
-  "license": "ISC",
+  "license": "MIT",
+  "engines": {
+    "node": ">=10"
+  },
   "devDependencies": {
     "@types/jest": "^24.0.23",
     "bili": "^4.8.1",

@@ -56,7 +56,7 @@ const multiFetch = async (
     } catch (e) {
       errors.push({
         error: e,
-        url
+        url: reqUrl
       })
     }
   }
