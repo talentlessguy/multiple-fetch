@@ -52,7 +52,9 @@ const multiFetch = async (
       } else {
         parsed = await res.text()
       }
-      data.push(parsed)
+      data.push({
+      	[url]: parsed
+      })
     } catch (e) {
       errors.push({
         error: e,

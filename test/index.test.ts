@@ -53,6 +53,6 @@ describe('Basic example', () => {
       { parse: 'json', domain: URL }
     )
 
-    expect(results.results[0]).not.toBeNull()
+    expect(results.results[0].posts).not.toBeNull()
   })
 })
