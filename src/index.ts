@@ -1,5 +1,5 @@
 export interface MultiFetchResponse {
-  results: any[]
+  results: any
   serverErrors: MultifetchServerError[]
   errors: MultifetchError[]
 }
@@ -24,7 +24,7 @@ const multiFetch = async (
   fetchOptions?: RequestInit,
   opts?: MultiFetchOptions
 ): Promise<MultiFetchResponse> => {
-  const data: any[] = []
+  const data: any = []
   const serverErrors: MultifetchServerError[] = []
   const errors: MultifetchError[] = []
   const promises: Promise<any>[] = []
@@ -62,9 +62,7 @@ const multiFetch = async (
 
       const parsed = await res[opts?.parse || 'json']()
 
-      data.push({
-        [url]: parsed
-      })
+      data[url] = parsed
     }
   }
 
