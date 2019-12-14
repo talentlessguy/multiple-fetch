@@ -1,6 +1,6 @@
 {
   "name": "multiple-fetch",
-  "version": "1.0.5",
+  "version": "1.0.6",
   "description": "Fetch multiple resources using one function",
   "main": "dist/index.js",
   "module": "dist/index.esm.js",
