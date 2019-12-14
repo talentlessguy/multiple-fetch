@@ -1,7 +1,7 @@
 {
   "name": "multiple-fetch",
-  "version": "1.0.4",
-  "description": "",
+  "version": "1.0.5",
+  "description": "Fetch multiple resources using one function",
   "main": "dist/index.js",
   "module": "dist/index.esm.js",
   "types": "dist/index.d.ts",
@@ -10,7 +10,8 @@
   ],
   "scripts": {
     "test": "jest",
-    "build": "yarn bili src/index.ts --format cjs --format esm"
+    "build": "yarn bili src/index.ts --format cjs --format esm",
+    "postbuild": "yarn publish"
   },
   "keywords": [
     "fetch",
